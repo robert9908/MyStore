@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +19,44 @@
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\ratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\services\\ratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\twofactorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\twofactorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\ratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\services\\ratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\redistokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\services\\redistokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\iratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\iratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -47,40 +75,16 @@
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\middlewares\\tokenblacklistmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\redistokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\services\\redistokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A3B3723F-7FBC-45EB-9713-7646DA379CA8}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A3B3723F-7FBC-45EB-9713-7646DA379CA8}|C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A3B3723F-7FBC-45EB-9713-7646DA379CA8}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A3B3723F-7FBC-45EB-9713-7646DA379CA8}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\logoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\logoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,189 +134,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RateLimitService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RateLimitService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Services\\RateLimitService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RateLimitService.cs",
-              "RelativeToolTip": "AuthService\\Services\\RateLimitService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T16:32:57.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IRateLimitService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IRateLimitService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Interfaces\\IRateLimitService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IRateLimitService.cs",
-              "RelativeToolTip": "AuthService\\Interfaces\\IRateLimitService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Title": "TwoFactorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\TwoFactorRequest.cs",
+              "RelativeDocumentMoniker": "AuthService\\DTOs\\TwoFactorRequest.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\TwoFactorRequest.cs",
+              "RelativeToolTip": "AuthService\\DTOs\\TwoFactorRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T16:31:57.56Z",
+              "WhenOpened": "2025-07-20T16:42:30.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\EmailService.cs",
-              "RelativeToolTip": "AuthService\\Services\\EmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T06:11:05.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
-              "RelativeDocumentMoniker": "AuthService\\Program.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
-              "RelativeToolTip": "AuthService\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:10:43.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "AuthService\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\AuthService.cs",
               "RelativeToolTip": "AuthService\\Services\\AuthService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAASwBQAAAA1AAAA",
+              "ViewState": "AQIAALoAAAAAAAAAAAAwwMYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T07:37:39.16Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResetPasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\ResetPasswordRequest.cs",
-              "RelativeDocumentMoniker": "AuthService\\DTOs\\ResetPasswordRequest.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\ResetPasswordRequest.cs",
-              "RelativeToolTip": "AuthService\\DTOs\\ResetPasswordRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T15:24:40.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "AuthService\\Interfaces\\IAuthService.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IAuthService.cs",
               "RelativeToolTip": "AuthService\\Interfaces\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T07:30:48.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\JwtService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Services\\JwtService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\JwtService.cs",
-              "RelativeToolTip": "AuthService\\Services\\JwtService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T16:18:26.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IJwtService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IJwtService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Interfaces\\IJwtService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IJwtService.cs",
-              "RelativeToolTip": "AuthService\\Interfaces\\IJwtService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T16:17:51.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TokenBlacklistMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
-              "RelativeDocumentMoniker": "AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
-              "RelativeToolTip": "AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAxwBYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T14:28:18.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RedisTokenBlacklistService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RedisTokenBlacklistService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Services\\RedisTokenBlacklistService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RedisTokenBlacklistService.cs",
-              "RelativeToolTip": "AuthService\\Services\\RedisTokenBlacklistService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T14:16:24.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthService\\appsettings.json",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\appsettings.json",
-              "RelativeToolTip": "AuthService\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-16T17:15:49.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ITokenBlacklistService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\ITokenBlacklistService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Interfaces\\ITokenBlacklistService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\ITokenBlacklistService.cs",
-              "RelativeToolTip": "AuthService\\Interfaces\\ITokenBlacklistService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T14:18:31.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Entities\\User.cs",
               "RelativeDocumentMoniker": "AuthService\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Entities\\User.cs",
               "RelativeToolTip": "AuthService\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T07:55:22.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IEmailService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Interfaces\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IEmailService.cs",
+              "RelativeToolTip": "AuthService\\Interfaces\\IEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T06:07:38.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AuthService\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuthService\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAASwEUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:07:32.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ITokenBlacklistService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\ITokenBlacklistService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Interfaces\\ITokenBlacklistService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\ITokenBlacklistService.cs",
+              "RelativeToolTip": "AuthService\\Interfaces\\ITokenBlacklistService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T14:18:31.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AuthResponse.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\AuthResponse.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\AuthResponse.cs",
@@ -325,7 +238,131 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 9,
+              "Title": "RateLimitService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RateLimitService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Services\\RateLimitService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RateLimitService.cs",
+              "RelativeToolTip": "AuthService\\Services\\RateLimitService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T16:32:57.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RedisTokenBlacklistService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RedisTokenBlacklistService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Services\\RedisTokenBlacklistService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RedisTokenBlacklistService.cs",
+              "RelativeToolTip": "AuthService\\Services\\RedisTokenBlacklistService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T14:16:24.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\EmailService.cs",
+              "RelativeToolTip": "AuthService\\Services\\EmailService.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwDcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T06:11:05.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRateLimitService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IRateLimitService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Interfaces\\IRateLimitService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IRateLimitService.cs",
+              "RelativeToolTip": "AuthService\\Interfaces\\IRateLimitService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T16:31:57.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\ResetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "AuthService\\DTOs\\ResetPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\ResetPasswordRequest.cs",
+              "RelativeToolTip": "AuthService\\DTOs\\ResetPasswordRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T15:24:40.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthService\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
+              "RelativeToolTip": "AuthService\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:10:43.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\JwtService.cs",
+              "RelativeToolTip": "AuthService\\Services\\JwtService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T16:18:26.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IJwtService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Interfaces\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IJwtService.cs",
+              "RelativeToolTip": "AuthService\\Interfaces\\IJwtService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T16:17:51.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TokenBlacklistMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
+              "RelativeDocumentMoniker": "AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
+              "RelativeToolTip": "AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAxwBYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T14:28:18.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthService\\appsettings.json",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\appsettings.json",
+              "RelativeToolTip": "AuthService\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-16T17:15:49.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Dockerfile",
               "RelativeDocumentMoniker": "AuthService\\Dockerfile",
@@ -333,38 +370,11 @@
               "RelativeToolTip": "AuthService\\Dockerfile",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-18T09:36:19.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T09:36:19.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IEmailService.cs",
-              "RelativeDocumentMoniker": "AuthService\\Interfaces\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IEmailService.cs",
-              "RelativeToolTip": "AuthService\\Interfaces\\IEmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T06:07:38.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "AuthService\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "AuthService\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAwEkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:07:32.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -372,12 +382,11 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AQIAAAEAAAAAAAAAAAAuwBIAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-07-18T09:06:47.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T09:06:47.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "LogoutRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\LogoutRequest.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\LogoutRequest.cs",
@@ -385,12 +394,11 @@
               "RelativeToolTip": "AuthService\\DTOs\\LogoutRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T13:03:03.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T13:03:03.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\LoginRequest.cs",
@@ -398,12 +406,11 @@
               "RelativeToolTip": "AuthService\\DTOs\\LoginRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:29:05.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:29:05.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\RegisterRequest.cs",
@@ -411,12 +418,11 @@
               "RelativeToolTip": "AuthService\\DTOs\\RegisterRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T12:51:25.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T12:51:25.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "AuthService\\Data\\AppDbContext.cs",
@@ -424,8 +430,7 @@
               "RelativeToolTip": "AuthService\\Data\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T12:44:50.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T12:44:50.068Z"
             }
           ]
         }

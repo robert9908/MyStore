@@ -12,4 +12,8 @@ public class User
 
     public string? PasswordResetToken {  get; set; } = string.Empty;
     public DateTime? PasswordResetTokenExpiry { get; set; }
+
+    public string? TwoFactorCode {  get; set; }
+    public DateTime? TwoFactorCodeExpiryTime { get; set; }
+    public bool IsTwoFactorEnabled { get; set; } = false;
 }

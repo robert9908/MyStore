@@ -1,6 +1,7 @@
 ﻿using AuthService.Interfaces;
 using System.Net;
 using System.Net.Mail;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace AuthService.Services
@@ -46,6 +47,13 @@ namespace AuthService.Services
             var body = "Click the link to reset your password {resetLink}";
 
             //await SendMailAsync(to, subject, body);
+        }
+
+        public async Task SendTwoFactorCodeAsync(string email, string code)
+        {
+            var subject = "Your 2FA Code";
+            var body = $"Your login confirmation code is: {code}. It expires in 5 minutes.";
+            //await SendEmailAsync(email, subject, body);
         }
     }
 }

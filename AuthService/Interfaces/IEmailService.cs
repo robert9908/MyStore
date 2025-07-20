@@ -6,6 +6,7 @@ namespace AuthService.Interfaces
     {
         Task SendConfirmationEmailAsync(string toEmail, string token);
         Task SendPasswordResetEmailAsync(string to, string resetToken);
+        Task SendTwoFactorCodeAsync(string email, string code);
 
     }
 }

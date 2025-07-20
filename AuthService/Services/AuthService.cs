@@ -35,7 +35,7 @@ namespace AuthService.Services
         public async Task<AuthResponse> LoginAsync(DTOs.LoginRequest request, string ip)
         {
             string rateKey = $"login:attempts:{request.Email}:{ip}";
-            if (await _rateLimitService.IsLimitedAsync(rateKey, 5, TimeSpan.FromMinutes(15)))
+            if (await _rateLimitService.IsLimitedAsync(rateKey))
             {
                 throw new Exception("Too many login attempts. Try again later");
             }
@@ -44,19 +44,35 @@ namespace AuthService.Services
                 throw new Exception("Invalid credentials");
             if (!user.IsEmailConfirmed) throw new Exception("Please confirm your Email first");
 
+            await _rateLimitService.ResetAttemptsAsync(rateKey);
+
             user.RefreshToken = Guid.NewGuid().ToString();
             user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
             await _context.SaveChangesAsync();
 
-            var tokens = GenerateToken(user);
-
-            return new AuthResponse
+            if(user.IsTwoFactorEnabled)
             {
-                AccessToken = tokens.accessToken,
-                RefreshToken = user.RefreshToken,
-                Role = user.Role
+                string code = new Random().Next(10000, 999999).ToString();
+                user.TwoFactorCode = code;
+                user.TwoFactorCodeExpiryTime = DateTime.UtcNow.AddMinutes(5);
+                await _context.SaveChangesAsync();
+                await _emailService.SendTwoFactorCodeAsync(user.Email, code);
 
-            };
+                return new AuthResponse
+                {
+                    Message = "2FA code sent. Please confirmg"
+                };
+            }
+
+            //var tokens = GenerateToken(user);
+
+            //return new AuthResponse
+            //{
+              //  AccessToken = tokens.accessToken,
+                //RefreshToken = user.RefreshToken,
+                //Role = user.Role
+
+            //};
         }
 
         public async Task<AuthResponse> RefreshTokenAsync(string refreshToken)
@@ -124,7 +140,7 @@ namespace AuthService.Services
         private (string accessToken, string  refreshToken) GenerateToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(_config["Jwt: key"]);
+            var key = Encoding.UTF8.GetBytes(_config["Jwt:key"]);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -157,11 +173,11 @@ namespace AuthService.Services
 
         public async Task ResetPasswordAsync(DTOs.ResetPasswordRequest request, string ip)
         {
-            //string rateKey = $"reset:attempts:{user.Email}:{ip}";
-            //if (await _rateLimitService.IsLimitedAsync(rateKey, 3, TimeSpan.FromMinutes(30)))
-           // {
-            //    throw new Exception("Too many reset requests. Try again later");
-            //
+            string rateKey = $"reset:attempts:{request.Token}:{ip}";
+            if (await _rateLimitService.IsLimitedAsync(rateKey))
+            {
+                throw new Exception("Too many reset requests. Try again later");
+            }
             var user = await _context.Users.FirstOrDefaultAsync(u =>
             u.PasswordResetToken == request.Token &&
             u.PasswordResetTokenExpiry > DateTime.UtcNow);
@@ -174,6 +190,7 @@ namespace AuthService.Services
             user.PasswordResetTokenExpiry = null;
 
             await _context.SaveChangesAsync();
+            await _rateLimitService.ResetAttemptsAsync(rateKey);
         }
 
         public async Task LogoutAsync(string refreshToken, string accessToken)
@@ -195,6 +212,39 @@ namespace AuthService.Services
             }
         }
 
-        
+        public async Task<AuthResponse> ConfirmTwoFactorAsync(DTOs.TwoFactorRequest request)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email && 
+            u.TwoFactorCode == request.Code &&
+            u.TwoFactorCodeExpiryTime > DateTime.UtcNow);
+
+            if (user == null)
+                throw new Exception("Invalid or expired 2FA code");
+
+            user.TwoFactorCode = null;
+            user.TwoFactorCodeExpiryTime = null;
+
+            user.RefreshToken = Guid.NewGuid().ToString();
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await _context.SaveChangesAsync();
+
+            var tokens = GenerateToken(user);
+
+            return new AuthResponse
+            {
+                AccessToken = tokens.accessToken,
+                RefreshToken = user.RefreshToken,
+                Role = user.Role
+            };
+        }
+
+        public async Task EnableTwoFactorAsync(Guid userId)
+        {
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null) throw new Exception("User not found");
+
+            user.IsTwoFactorEnabled = true;
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -2,6 +2,9 @@
 {
     public interface IRateLimitService
     {
-        Task<bool> IsLimitedAsync(string key, int limit, TimeSpan duration);
+        Task<bool> IsLimitedAsync(string key);
+        Task RegisterAttemptAsync(string key);
+        Task ResetAttemptsAsync(string key);
+
     }
 }
