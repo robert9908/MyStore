@@ -3,12 +3,120 @@
   "WorkspaceRootPath": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\services\\yoomoneyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\services\\yoomoneyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\interfaces\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\interfaces\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\interfaces\\ipaymentprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\interfaces\\ipaymentprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\dtos\\paymentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\dtos\\paymentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\dtos\\paymentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\dtos\\paymentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\dtos\\refundrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\dtos\\refundrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\data\\paymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\data\\paymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\entities\\refundrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\entities\\refundrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F430C6CC-5D56-456C-989E-6B2FED60EF6F}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\dtos\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\dtos\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\dtos\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\dtos\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\orderservice\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993B399-31FF-4BC7-A7B0-564394AC904F}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\admin\\usersummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\admin\\usersummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\admin\\changeuserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\admin\\changeuserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\interfaces\\itokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7EF8240-33F2-44F5-B7B1-DDAB1C8754D8}|AuthService\\AuthService.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\mystore\\authservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -106,7 +210,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,20 +238,320 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TwoFactorRequest.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\TwoFactorRequest.cs",
-              "RelativeDocumentMoniker": "AuthService\\DTOs\\TwoFactorRequest.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\TwoFactorRequest.cs",
-              "RelativeToolTip": "AuthService\\DTOs\\TwoFactorRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "DocumentIndex": 1,
+              "Title": "YooMoneyProvider.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Services\\YooMoneyProvider.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Services\\YooMoneyProvider.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Services\\YooMoneyProvider.cs",
+              "RelativeToolTip": "PaymentService\\Services\\YooMoneyProvider.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAswDMAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T16:42:30.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T16:23:32.887Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Services\\PaymentService.cs",
+              "RelativeToolTip": "PaymentService\\Services\\PaymentService.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T15:35:47.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPaymentProvider.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Interfaces\\IPaymentProvider.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Interfaces\\IPaymentProvider.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Interfaces\\IPaymentProvider.cs",
+              "RelativeToolTip": "PaymentService\\Interfaces\\IPaymentProvider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T15:28:35.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Interfaces\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Interfaces\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Interfaces\\IPaymentService.cs",
+              "RelativeToolTip": "PaymentService\\Interfaces\\IPaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T15:24:47.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaymentResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\DTOs\\PaymentResponseDto.cs",
+              "RelativeDocumentMoniker": "PaymentService\\DTOs\\PaymentResponseDto.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\DTOs\\PaymentResponseDto.cs",
+              "RelativeToolTip": "PaymentService\\DTOs\\PaymentResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T14:41:18.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "PaymentService\\Controllers\\PaymentsController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwD0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T08:39:44.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RefundRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\DTOs\\RefundRequestDto.cs",
+              "RelativeDocumentMoniker": "PaymentService\\DTOs\\RefundRequestDto.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\DTOs\\RefundRequestDto.cs",
+              "RelativeToolTip": "PaymentService\\DTOs\\RefundRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T14:40:57.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RefundRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Entities\\RefundRequest.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Entities\\RefundRequest.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Entities\\RefundRequest.cs",
+              "RelativeToolTip": "PaymentService\\Entities\\RefundRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T14:36:10.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Program.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Program.cs",
+              "RelativeToolTip": "PaymentService\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAUwAkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T11:07:49.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PaymentDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Data\\PaymentDbContext.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Data\\PaymentDbContext.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Data\\PaymentDbContext.cs",
+              "RelativeToolTip": "PaymentService\\Data\\PaymentDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T17:12:46.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaymentRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\DTOs\\PaymentRequestDto.cs",
+              "RelativeDocumentMoniker": "PaymentService\\DTOs\\PaymentRequestDto.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\DTOs\\PaymentRequestDto.cs",
+              "RelativeToolTip": "PaymentService\\DTOs\\PaymentRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T17:11:57.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Entities\\Payment.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Entities\\Payment.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\PaymentService\\Entities\\Payment.cs",
+              "RelativeToolTip": "PaymentService\\Entities\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T17:03:47.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OrderService\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "OrderService\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAswDwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T11:49:58.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "OrderService\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Services\\OrderService.cs",
+              "RelativeToolTip": "OrderService\\Services\\OrderService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAcwDYAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:27:43.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderResponse.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\DTOs\\OrderResponse.cs",
+              "RelativeDocumentMoniker": "OrderService\\DTOs\\OrderResponse.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\DTOs\\OrderResponse.cs",
+              "RelativeToolTip": "OrderService\\DTOs\\OrderResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:18:16.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\DTOs\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "OrderService\\DTOs\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\DTOs\\OrderItemDto.cs",
+              "RelativeToolTip": "OrderService\\DTOs\\OrderItemDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:16:30.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateOrderRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\DTOs\\CreateOrderRequest.cs",
+              "RelativeDocumentMoniker": "OrderService\\DTOs\\CreateOrderRequest.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\DTOs\\CreateOrderRequest.cs",
+              "RelativeToolTip": "OrderService\\DTOs\\CreateOrderRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:14:20.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "OrderService\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Entities\\Order.cs",
+              "RelativeToolTip": "OrderService\\Entities\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T05:54:37.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Data\\OrderDbContext.cs",
+              "RelativeDocumentMoniker": "OrderService\\Data\\OrderDbContext.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Data\\OrderDbContext.cs",
+              "RelativeToolTip": "OrderService\\Data\\OrderDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:28:15.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "OrderService\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "OrderService\\Interfaces\\IOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:23:37.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "OrderService\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\OrderService\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "OrderService\\Entities\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T06:05:52.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "AuthService\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "AuthService\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAADwvy4AAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:53:00.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Services\\AdminService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\AdminService.cs",
+              "RelativeToolTip": "AuthService\\Services\\AdminService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAswCgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:41:01.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IAdminService.cs",
+              "RelativeDocumentMoniker": "AuthService\\Interfaces\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IAdminService.cs",
+              "RelativeToolTip": "AuthService\\Interfaces\\IAdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:38:31.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ChangeUserRole.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\Admin\\ChangeUserRole.cs",
+              "RelativeDocumentMoniker": "AuthService\\DTOs\\Admin\\ChangeUserRole.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\Admin\\ChangeUserRole.cs",
+              "RelativeToolTip": "AuthService\\DTOs\\Admin\\ChangeUserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:37:52.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserSummary.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\Admin\\UserSummary.cs",
+              "RelativeDocumentMoniker": "AuthService\\DTOs\\Admin\\UserSummary.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\Admin\\UserSummary.cs",
+              "RelativeToolTip": "AuthService\\DTOs\\Admin\\UserSummary.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:36:16.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "AuthService\\Services\\AuthService.cs",
@@ -155,12 +559,35 @@
               "RelativeToolTip": "AuthService\\Services\\AuthService.cs",
               "ViewState": "AQIAALoAAAAAAAAAAAAwwMYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:37:39.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:37:39.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthService\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
+              "RelativeToolTip": "AuthService\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAIBJwBwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:10:43.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TwoFactorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\TwoFactorRequest.cs",
+              "RelativeDocumentMoniker": "AuthService\\DTOs\\TwoFactorRequest.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\TwoFactorRequest.cs",
+              "RelativeToolTip": "AuthService\\DTOs\\TwoFactorRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T16:42:30.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "AuthService\\Interfaces\\IAuthService.cs",
@@ -168,25 +595,23 @@
               "RelativeToolTip": "AuthService\\Interfaces\\IAuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:30:48.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:30:48.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 25,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Entities\\User.cs",
               "RelativeDocumentMoniker": "AuthService\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Entities\\User.cs",
               "RelativeToolTip": "AuthService\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAsAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBQAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:55:22.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:55:22.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 31,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IEmailService.cs",
               "RelativeDocumentMoniker": "AuthService\\Interfaces\\IEmailService.cs",
@@ -194,12 +619,11 @@
               "RelativeToolTip": "AuthService\\Interfaces\\IEmailService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T06:07:38.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T06:07:38.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 32,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "AuthService\\Controllers\\AuthController.cs",
@@ -207,12 +631,11 @@
               "RelativeToolTip": "AuthService\\Controllers\\AuthController.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAASwEUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:07:32.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T13:07:32.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 28,
               "Title": "ITokenBlacklistService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\ITokenBlacklistService.cs",
               "RelativeDocumentMoniker": "AuthService\\Interfaces\\ITokenBlacklistService.cs",
@@ -220,12 +643,11 @@
               "RelativeToolTip": "AuthService\\Interfaces\\ITokenBlacklistService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T14:18:31.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T14:18:31.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 34,
               "Title": "AuthResponse.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\AuthResponse.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\AuthResponse.cs",
@@ -233,12 +655,11 @@
               "RelativeToolTip": "AuthService\\DTOs\\AuthResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:29:37.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:29:37.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 36,
               "Title": "RateLimitService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RateLimitService.cs",
               "RelativeDocumentMoniker": "AuthService\\Services\\RateLimitService.cs",
@@ -246,12 +667,11 @@
               "RelativeToolTip": "AuthService\\Services\\RateLimitService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T16:32:57.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T16:32:57.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 37,
               "Title": "RedisTokenBlacklistService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\RedisTokenBlacklistService.cs",
               "RelativeDocumentMoniker": "AuthService\\Services\\RedisTokenBlacklistService.cs",
@@ -259,12 +679,11 @@
               "RelativeToolTip": "AuthService\\Services\\RedisTokenBlacklistService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T14:16:24.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T14:16:24.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 35,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "AuthService\\Services\\EmailService.cs",
@@ -272,12 +691,11 @@
               "RelativeToolTip": "AuthService\\Services\\EmailService.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAYwDcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T06:11:05.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T06:11:05.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 38,
               "Title": "IRateLimitService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IRateLimitService.cs",
               "RelativeDocumentMoniker": "AuthService\\Interfaces\\IRateLimitService.cs",
@@ -285,12 +703,11 @@
               "RelativeToolTip": "AuthService\\Interfaces\\IRateLimitService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T16:31:57.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T16:31:57.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 39,
               "Title": "ResetPasswordRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\ResetPasswordRequest.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\ResetPasswordRequest.cs",
@@ -302,19 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
-              "RelativeDocumentMoniker": "AuthService\\Program.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Program.cs",
-              "RelativeToolTip": "AuthService\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:10:43.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 41,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "AuthService\\Services\\JwtService.cs",
@@ -326,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 42,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Interfaces\\IJwtService.cs",
               "RelativeDocumentMoniker": "AuthService\\Interfaces\\IJwtService.cs",
@@ -338,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 43,
               "Title": "TokenBlacklistMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
               "RelativeDocumentMoniker": "AuthService\\Middlewares\\TokenBlacklistMiddleware.cs",
@@ -350,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 40,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\appsettings.json",
               "RelativeDocumentMoniker": "AuthService\\appsettings.json",
@@ -362,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 46,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Dockerfile",
               "RelativeDocumentMoniker": "AuthService\\Dockerfile",
@@ -374,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 44,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -386,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 45,
               "Title": "LogoutRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\LogoutRequest.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\LogoutRequest.cs",
@@ -398,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 47,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\LoginRequest.cs",
@@ -410,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 48,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\DTOs\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "AuthService\\DTOs\\RegisterRequest.cs",
@@ -422,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 49,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\MyStore\\AuthService\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "AuthService\\Data\\AppDbContext.cs",

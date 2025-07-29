@@ -16,4 +16,7 @@ public class User
     public string? TwoFactorCode {  get; set; }
     public DateTime? TwoFactorCodeExpiryTime { get; set; }
     public bool IsTwoFactorEnabled { get; set; } = false;
+
+    public bool IsBanned { get; set; } = false;
+    public bool EmailConfirmed { get; set; } = false;
 }

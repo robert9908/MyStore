@@ -29,6 +29,7 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Conn
     builder.Configuration.GetConnectionString("Redis")));
 
 builder.Services.AddScoped<IRateLimitService, RateLimitService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
