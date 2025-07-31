@@ -4,8 +4,8 @@ public class User
     public string Email { get; set; } = string.Empty;
     public string PasswordHash { get; set; } = string.Empty;
     public string Role { get; set; } = "Client";
-    public string RefreshToken { get; set; } = string.Empty;
-    public DateTime RefreshTokenExpiryTime { get; set; } = DateTime.UtcNow;
+    public DateTime? RefreshTokenExpiryTime { get; set; } = DateTime.UtcNow;
+    public string? RefreshTokenHash {  get; set; }
 
     public bool IsEmailConfirmed { get; set; } = false;
     public string EmailConfirmationToken { get; set; } = string.Empty;

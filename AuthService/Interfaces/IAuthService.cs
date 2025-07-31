@@ -10,7 +10,7 @@ namespace AuthService.Interfaces
         Task<AuthResponse> LoginAsync(DTOs.LoginRequest request, string ip);
         Task<AuthResponse> RefreshTokenAsync(string refreshToken);
 
-        Task ForgotPasswordAsync(ForgotPasswordRequest request);
+        Task ForgotPasswordAsync(DTOs.ForgotPasswordRequest request);
         Task ResetPasswordAsync(DTOs.ResetPasswordRequest request, string ip);
 
         Task LogoutAsync(string refreshToken, string accessToken);

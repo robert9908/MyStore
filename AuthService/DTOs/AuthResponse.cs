@@ -6,5 +6,6 @@
         public string RefreshToken { get; set; }
         public string Role { get; set; }
         public string Message { get; set; }
+        public bool IsSuccess
     }
 }

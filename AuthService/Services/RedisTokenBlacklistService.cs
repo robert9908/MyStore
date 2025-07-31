@@ -12,16 +12,16 @@ namespace AuthService.Services
             _db = redis.GetDatabase();
         }
 
-        public async Task<bool> IsTokenBlacklistedAsync(string token)
+        public async Task<bool> IsTokenBlacklistedAsync(string token, string type)
         {
-            return await _db.KeyExistsAsync(GetKey(token));
+            return await _db.KeyExistsAsync(GetKey(token, type));
         }
 
-        private static string GetKey(string token) => $"Blacklist:{token}";
+        private static string GetKey(string token, string type) => $"Blacklist{type}:{token}";
 
-        public async Task BlacklistTokenAsync(string token, TimeSpan expiry)
+        public async Task BlacklistTokenAsync(string token, string type, TimeSpan expiry)
         {
-            await _db.StringSetAsync(GetKey(token), "1", expiry);
+            await _db.StringSetAsync(GetKey(token, type), "1", expiry);
         }
     }
 }

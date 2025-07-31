@@ -3,7 +3,7 @@ using AuthService.Interfaces;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Validations;
+
 
 namespace AuthService.Controllers
 {
@@ -13,71 +13,194 @@ namespace AuthService.Controllers
     {
         private readonly IAuthService _authService;
         private readonly AppDbContext _context;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthController(IAuthService authService, AppDbContext context)
+        public AuthController(IAuthService authService, AppDbContext context, ILogger<AuthController> logger)
         {
             _authService = authService;
             _context = context;
+            _logger = logger;
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(DTOs.RegisterRequest request)
+        [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(object), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> Register([FromBody] DTOs.RegisterRequest request)
         {
-            var result = await _authService.RegisterAsync(request);
+            var result = await _authService.LoginAsync(request);
+
+            if (!result.IsSuccess)
+            {
+                _logger.LogWarning("Login failed for {Email}: {Message}", request.Email, result.Message);
+                return BadRequest(new
+                {
+                    error = new
+                    {
+                        code = "LOGIN_FAILED",
+                        message = result.Message
+                    }
+                });
+            }
+
+            _logger.LogInformation("User logged in: {Email}", request.Email);
             return Ok(result);
         }
         [HttpPost("login")]
-        public async Task<IActionResult> Login(DTOs.LoginRequest request)
+        [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(object), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> Login([FromBody] DTOs.LoginRequest request)
         {
             var result = await _authService.LoginAsync(request);
+
+            if (!result.IsSuccess)
+            {
+                _logger.LogWarning("Login failed for {Email}: {Message}", request.Email, result.Message);
+                return BadRequest(new
+                {
+                    error = new
+                    {
+                        code = "LOGIN_FAILED",
+                        message = result.Message
+                    }
+                });
+            }
+
+            _logger.LogInformation("User logged in: {Email}", request.Email);
             return Ok(result);
         }
 
         [HttpPost("refresh")]
+        [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(object), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Refresh([FromBody] string refreshToken)
         {
+            if (string.IsNullOrWhiteSpace(refreshToken))
+                return BadRequest(new
+                {
+                    error = new
+                    {
+                        code = "TOKEN_MISSING",
+                        message = "Refresh token is required"
+                    }
+                });
+
             var result = await _authService.RefreshTokenAsync(refreshToken);
+
+            if (!result.IsSuccess)
+            {
+                _logger.LogWarning("Refresh token failed: {Message}", result.Message);
+                return BadRequest(new
+                {
+                    error = new
+                    {
+                        code = "REFRESH_FAILED",
+                        message = result.Message
+                    }
+                });
+            }
+
             return Ok(result);
         }
 
         [HttpGet("verify")]
+        [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(object), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> VerifyEmail([FromQuery] string token)
         {
+            if (string.IsNullOrWhiteSpace(token))
+                return BadRequest(new
+                {
+                    error = new
+                    {
+                        code = "TOKEN_MISSING",
+                        message = "Token is required"
+                    }
+                });
+
             var user = await _context.Users.FirstOrDefaultAsync(u => u.EmailConfirmationToken == token);
 
             if (user is null)
-                return BadRequest("Invalid or expired token");
+            {
+                _logger.LogWarning("Email verification failed: invalid or expired token");
+                return BadRequest(new
+                {
+                    error = new
+                    {
+                        code = "INVALID_TOKEN",
+                        message = "Invalid or expired token"
+                    }
+                });
+            }
 
             user.IsEmailConfirmed = true;
             user.EmailConfirmationToken = string.Empty;
-
             await _context.SaveChangesAsync();
 
-            return Ok("Email confirmed succesfully");
+            _logger.LogInformation("Email verified for user {Email}", user.Email);
+            return Ok(new { message = "Email confirmed successfully" });
         }
 
         [HttpPost("forgot-password")]
-        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
+        [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(object), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> ForgotPassword([FromBody] DTOs.ForgotPasswordRequest request)
         {
-            await _authService.ForgotPasswordAsync(request);
-            return Ok("If an account with this email exists, a reset link hsa been sent");
 
+            await _authService.ForgotPasswordAsync(request);
+
+            _logger.LogInformation("Password reset email requested for {Email}", request.Email);
+            return Ok(new { message = "If an account with this email exists, a reset link has been sent" });
         }
 
         [HttpPost("reset-password")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> ResetPassword([FromBody] DTOs.ResetPasswordRequest request)
         {
-            await _authService.ResetPasswordAsync(request);
-            return Ok("Password has been successfully reset");
+            var result = await _authService.ResetPasswordAsync(request);
+
+            if (!result.IsSuccess)
+            {
+                _logger.LogWarning("Reset password failed: {Message}", result.Message);
+                return BadRequest(new 
+                {
+                    error = new 
+                    {
+                        code = "RESET_FAILED",
+                        message = result.Message
+                    }
+                });
+            }
+
+            _logger.LogInformation("Password reset successfully for {Email}", request.Email);
+            return Ok(new { message = "Password has been successfully reset" });
         }
 
         [HttpPost("logout")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> Logout([FromBody] LogoutRequest request)
         {
-            var accessToken = Request.Headers["Authorization"].ToString().Replace("Bearer", "");
+            var accessToken = Request.Headers["Authorization"].ToString().Replace("Bearer", "").Trim();
+
+            if (string.IsNullOrEmpty(accessToken))
+                return BadRequest(new
+                {
+                    error = new
+                    {
+                        code = "TOKEN_MISSING",
+                        message = "Access token is missing"
+                    }
+                });
 
             await _authService.LogoutAsync(request.RefreshToken, accessToken);
 
+            _logger.LogInformation("User logged out with refresh token: {RefreshToken}", request.RefreshToken);
             return Ok(new { message = "Logout successful" });
         }
     }
