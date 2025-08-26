@@ -46,11 +46,31 @@ builder.Services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<ResetPasswordRequestValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<ForgotPasswordRequestValidator>();
 
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
     var key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]);
     options.TokenValidationParameters = new TokenValidationParameters { ValidateIssuer = false, ValidateAudience = false, ValidateIssuerSigningKey = false, IssuerSigningKey = new SymmetricSecurityKey(key) };
 });
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddGoogle("Google", options =>
+{
+    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+    options.CallbackPath = "/api/auth/google/callback";
+
+    options.Events.OnCreatingTicket = context =>
+    {
+        // Можно вытащить email, имя, и создать пользователя в БД
+        return Task.CompletedTask;
+    };
+});
+
 
 builder.Services.AddAuthorization();
 

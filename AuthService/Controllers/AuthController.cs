@@ -1,8 +1,11 @@
 ﻿using AuthService.DTOs;
 using AuthService.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 
 namespace AuthService.Controllers
@@ -202,6 +205,39 @@ namespace AuthService.Controllers
 
             _logger.LogInformation("User logged out with refresh token: {RefreshToken}", request.RefreshToken);
             return Ok(new { message = "Logout successful" });
+        }
+
+        [HttpGet("google-login")]
+        public IActionResult GoogleLogin()
+        {
+            var props = new AuthenticationProperties
+            {
+                RedirectUri = Url.Action("GoogleCallback")
+            };
+
+            return Challenge(props, "Google");
+        }
+
+        [HttpGet("google/callback")]
+        public async Task<IActionResult> GoogleCallback()
+        {
+            var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(new
+                {
+                    error = new { code = "OAUTH_FAILED", message = "Google authentication failed" }
+                });
+            }
+
+            var email = result.Principal.FindFirst(ClaimTypes.Email)?.Value;
+
+            // 1. Найти или создать пользователя в БД
+            // 2. Сгенерировать JWT
+            // 3. Вернуть его как обычно
+
+            return Ok(new { token = "your_jwt_here", refreshToken = "..." });
         }
     }
 }

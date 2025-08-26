@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LK2vUKXbsleVZnzL/abOWdVuh+FsZs+DMP4j8IOMe7QUwUBVdzoDk3YroCWWbvingD43WNGx2vaQ1LTWzte2lQ==",
+  "dgSpecHash": "MhYqPPqb9qg32v6OoKNjjTxr12QZKLEgt3EJYZiIuj/mIv1FVQmB56WdDLK6VZmLo4SOzIvQT0xJOodXf6ZSTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Николай\\Desktop\\MyStore\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Николай\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\Николай\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Николай\\.nuget\\packages\\mailkit\\4.13.0\\mailkit.4.13.0.nupkg.sha512",
+    "C:\\Users\\Николай\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\8.0.16\\microsoft.aspnetcore.authentication.google.8.0.16.nupkg.sha512",
     "C:\\Users\\Николай\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.18\\microsoft.aspnetcore.authentication.jwtbearer.8.0.18.nupkg.sha512",
     "C:\\Users\\Николай\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
     "C:\\Users\\Николай\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
