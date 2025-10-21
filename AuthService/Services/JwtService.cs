@@ -1,11 +1,11 @@
-﻿
+
 using AuthService.Configurations;
 using AuthService.Interfaces;
+using AuthService.Entities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Security.Cryptography.Xml;
 using System.Text;
 
 namespace AuthService.Services
@@ -29,9 +29,14 @@ namespace AuthService.Services
 
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role),
+                new(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new(ClaimTypes.Email, user.Email),
+                new(ClaimTypes.Role, user.Role),
+                new("sub", user.Id.ToString()),
+                new("email", user.Email),
+                new("role", user.Role),
+                new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Value.Secret));
@@ -41,9 +46,9 @@ namespace AuthService.Services
                 issuer: _jwtSettings.Value.Issuer,
                 audience: _jwtSettings.Value.Audience,
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(_jwtSettings.Value.ExpiryMinutes),
-                signingCredentials: creds
-            );
+                notBefore: DateTime.UtcNow,
+                expires: DateTime.UtcNow.AddMinutes(_jwtSettings.Value.AccessTokenExpiryMinutes),
+                signingCredentials: creds);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
@@ -51,9 +56,16 @@ namespace AuthService.Services
         public (string AccessToken, string RefreshToken) GenerateTokens(User user)
         {
             var accessToken = GenerateAccessToken(user);
-            var refreshToken = _refreshTokenService.GenerateRefreshToken();
-            
-            return(accessToken, refreshToken);
+            var refreshToken = GenerateRefreshToken();
+            return (accessToken, refreshToken);
+        }
+
+        private string GenerateRefreshToken()
+        {
+            var randomBytes = new byte[64];
+            using var rng = System.Security.Cryptography.RandomNumberGenerator.Create();
+            rng.GetBytes(randomBytes);
+            return Convert.ToBase64String(randomBytes);
         }
 
         public ClaimsPrincipal? ValidateToken(string token)
@@ -84,6 +96,7 @@ namespace AuthService.Services
                 return null;
             }
         }
+
         public DateTime GetExpiryFromToken(string token)
         {
             try

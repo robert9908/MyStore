@@ -1,4 +1,4 @@
-﻿using System.Net.Http.Headers;
+using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Text;
 
@@ -49,8 +49,9 @@ namespace PaymentService.Services
 
         public async Task RefundPaymentAsync(Guid paymentId, decimal amount, string reason)
         {
-            // Here you would use YooMoney API to send a refund request
-            await Task.CompletedTask; // Stub implementation for demo
+            // Refund endpoint not yet integrated. Expose explicit behavior instead of leaving a stub.
+            // Track implementation via issue tracker and feature flag.
+            throw new NotSupportedException("YooMoney refund integration is not configured. Provide YooMoney:RefundEnabled=true and credentials, then implement API call.");
         }
     }
 }

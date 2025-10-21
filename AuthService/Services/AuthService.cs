@@ -1,11 +1,14 @@
-﻿using AuthService.DTOs;
-using AuthService.Exceptions;
+using AuthService.DTOs;
+using AuthService.Entities;
 using AuthService.Interfaces;
-using Microsoft.AspNetCore.Identity.Data;
+using AuthService.Data;
+using AuthService.Exceptions;
+using AuthService.Configurations;
 using Microsoft.EntityFrameworkCore;
-using StackExchange.Redis;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Logging;
 using System.Security.Cryptography;
-using System.Text;
+using StackExchange.Redis;
 
 namespace AuthService.Services
 {
@@ -14,29 +17,33 @@ namespace AuthService.Services
         private readonly IJwtService _jwtService;
         private readonly IDatabase _redis;
         private readonly AppDbContext _context;
-        public readonly IConfiguration _config;
+        private readonly IConfiguration _config;
         private readonly IEmailService _emailService;
         private readonly IRateLimitService _rateLimitService;
         private readonly ILogger<AuthService> _logger;
         private readonly IRefreshTokenService _refreshTokenService;
+        private readonly IPasswordService _passwordService;
 
-        public AuthService(AppDbContext context,
-         IConfiguration config,
-         IEmailService emailService,
-         IJwtService jwtservice,
-         IConnectionMultiplexer redis,
-         IRateLimitService rateLimitService,
-         ILogger<AuthService> logger,
-         IRefreshTokenService refreshTokenService)
+        public AuthService(
+            AppDbContext context,
+            IConfiguration config,
+            IEmailService emailService,
+            IJwtService jwtService,
+            IConnectionMultiplexer redis,
+            IRateLimitService rateLimitService,
+            ILogger<AuthService> logger,
+            IRefreshTokenService refreshTokenService,
+            IPasswordService passwordService)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
             _config = config ?? throw new ArgumentNullException(nameof(config));
             _emailService = emailService ?? throw new ArgumentNullException(nameof(emailService));
-            _jwtService = jwtservice ?? throw new ArgumentNullException(nameof(jwtservice));
+            _jwtService = jwtService ?? throw new ArgumentNullException(nameof(jwtService));
             _redis = redis.GetDatabase() ?? throw new ArgumentNullException(nameof(redis));
             _rateLimitService = rateLimitService ?? throw new ArgumentNullException(nameof(rateLimitService));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _refreshTokenService = refreshTokenService;
+            _refreshTokenService = refreshTokenService ?? throw new ArgumentNullException(nameof(refreshTokenService));
+            _passwordService = passwordService ?? throw new ArgumentNullException(nameof(passwordService));
         }
 
 
@@ -49,8 +56,41 @@ namespace AuthService.Services
             }
             var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == request.Email);
 
-            if (user == null || !VerifyPassword(request.Password, user.PasswordHash))
-                throw new UnauthorizedAccessException("Invalid credentials");
+            if (user == null || !_passwordService.VerifyPassword(request.Password, user.PasswordHash))
+            {
+                if (user != null)
+                {
+                    user.FailedLoginAttempts++;
+                    user.LastFailedLogin = DateTime.UtcNow;
+                    
+                    if (user.FailedLoginAttempts >= 5)
+                    {
+                        user.LockoutEnd = DateTime.UtcNow.AddMinutes(30);
+                        _logger.LogWarning("User {Email} locked out due to too many failed attempts", user.Email);
+                    }
+                    
+                    await _context.SaveChangesAsync();
+                }
+                
+                // Rate limiting handled by middleware
+                throw new UnauthorizedException("Invalid credentials");
+            }
+            
+            // Check if account is locked
+            if (user.LockoutEnd.HasValue && user.LockoutEnd > DateTime.UtcNow)
+            {
+                throw new UnauthorizedException($"Account is locked until {user.LockoutEnd}");
+            }
+            
+            // Reset failed attempts on successful login
+            if (user.FailedLoginAttempts > 0)
+            {
+                user.FailedLoginAttempts = 0;
+                user.LockoutEnd = null;
+            }
+            
+            user.LastLoginAt = DateTime.UtcNow;
+            user.LastLoginIp = ip;
 
             if (!user.IsEmailConfirmed) throw new InvalidOperationException("Please confirm your Email first");
 
@@ -113,21 +153,27 @@ namespace AuthService.Services
             if (await _context.Users.AnyAsync(u => u.Email == request.Email))
                 throw new InvalidOperationException("User already exists");
 
+            // Validate password strength
+            if (!_passwordService.IsPasswordStrong(request.Password))
+            {
+                throw new ValidationException("Password does not meet security requirements", new Dictionary<string, string[]>());
+            }
+            
             var user = new User
             {
                 Email = request.Email,
-                PasswordHash = HashPassword(request.Password),
+                PasswordHash = _passwordService.HashPassword(request.Password),
                 Role = "Client",
                 RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7),
                 EmailConfirmationToken = Guid.NewGuid().ToString(),
                 IsEmailConfirmed = false
             };
 
-             var (accessToken, newRefreshToken) = _jwtService.GenerateTokens(user);
+            var (accessToken, newRefreshToken) = _jwtService.GenerateTokens(user);
 
             user.RefreshTokenHash = _refreshTokenService.HashToken(newRefreshToken);
-            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7); 
-            
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
@@ -153,7 +199,7 @@ namespace AuthService.Services
             await _emailService.SendPasswordResetEmailAsync(user.Email, user.PasswordResetToken);
         }
 
-        public async Task ResetPasswordAsync(DTOs.ResetPasswordRequest request, string ip)
+        public async Task<AuthResponse> ResetPasswordAsync(DTOs.ResetPasswordRequest request, string ip)
         {
             var rateKey = $"reset:attempts:{request.Token}:{ip}";
             if (await _rateLimitService.IsLimitedAsync(rateKey))
@@ -167,12 +213,23 @@ namespace AuthService.Services
             if (user == null) throw new UnauthorizedAccessException("Invalid or expired reset token");
 
 
-            user.PasswordHash = HashPassword(request.NewPassword);
+            if (!_passwordService.IsPasswordStrong(request.NewPassword))
+            {
+                throw new ValidationException("New password does not meet security requirements", new Dictionary<string, string[]>());
+            }
+            
+            user.PasswordHash = _passwordService.HashPassword(request.NewPassword);
             user.PasswordResetToken = null;
             user.PasswordResetTokenExpiry = null;
 
             await _context.SaveChangesAsync();
             await _rateLimitService.ResetAttemptsAsync(rateKey);
+            
+            return new AuthResponse
+            {
+                IsSuccess = true,
+                Message = "Password has been successfully reset"
+            };
         }
 
         public async Task LogoutAsync(string refreshToken, string accessToken)
@@ -229,19 +286,39 @@ namespace AuthService.Services
             await _context.SaveChangesAsync();
         }
 
-        #region Helpers
 
-        private string HashPassword(string password)
+        public async Task<AuthResponse> HandleExternalLoginAsync(string provider, string providerUserId, string email, string name)
         {
-            using var sha = SHA256.Create();
-            var bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
-            return Convert.ToBase64String(bytes);
+            // 1) ищем пользователя по email
+            var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == email);
+
+            if (user == null)
+            {
+                user = new User
+                {
+                    Email = email,
+                    Role = "Client",
+                    IsEmailConfirmed = true, // соц.логин => email уже подтверждён провайдером (на твоё усмотрение)
+                                             // можно сохранить отображаемое имя, аватар и т.д.
+                };
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+            }
+
+            var (accessToken, refreshToken) = _jwtService.GenerateTokens(user);
+            user.RefreshTokenHash = _refreshTokenService.HashToken(refreshToken);
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+
+            await _context.SaveChangesAsync();
+
+            return new AuthResponse
+            {
+                AccessToken = accessToken,
+                RefreshToken = refreshToken,
+                Role = user.Role,
+                IsSuccess = true
+            };
+
         }
-
-        private bool VerifyPassword(string password, string hash) => HashPassword(password) == hash;
-
-       
-       
-        #endregion
     }
 }

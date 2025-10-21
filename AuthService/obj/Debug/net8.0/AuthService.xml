@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuthService</name>
+    </assembly>
+    <members>
+        <member name="T:AuthService.Controllers.AuthController">
+            <summary>
+            Authentication controller providing user registration, login, and token management
+            </summary>
+        </member>
+        <member name="M:AuthService.Controllers.AuthController.Register(AuthService.DTOs.RegisterRequest)">
+            <summary>
+            Register a new user account
+            </summary>
+            <param name="request">Registration details</param>
+            <returns>Registration result</returns>
+        </member>
+        <member name="M:AuthService.Controllers.AuthController.Login(AuthService.DTOs.LoginRequest)">
+            <summary>
+            Authenticate user and return access tokens
+            </summary>
+            <param name="request">Login credentials</param>
+            <returns>Authentication tokens</returns>
+        </member>
+        <member name="M:AuthService.Controllers.AuthController.ForgotPassword(AuthService.DTOs.ForgotPasswordRequest)">
+            <summary>
+            Request password reset email
+            </summary>
+            <param name="request">Email for password reset</param>
+            <returns>Reset request confirmation</returns>
+        </member>
+        <member name="M:AuthService.Controllers.AuthController.ResetPassword(AuthService.DTOs.ResetPasswordRequest)">
+            <summary>
+            Reset user password using reset token
+            </summary>
+            <param name="request">Password reset details</param>
+            <returns>Reset result</returns>
+        </member>
+        <member name="M:AuthService.Controllers.AuthController.Logout(AuthService.DTOs.LogoutRequest)">
+            <summary>
+            Logout user and invalidate tokens
+            </summary>
+            <param name="request">Logout request with refresh token</param>
+            <returns>Logout confirmation</returns>
+        </member>
+        <member name="M:AuthService.Controllers.AuthController.GetClientIpAddress">
+            <summary>
+            Get client IP address from request
+            </summary>
+            <returns>Client IP address</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,83 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # API Gateway
+  - job_name: 'apigateway'
+    consul_sd_configs:
+      - server: 'consul:8500'
+        services: ['apigateway']
+    relabel_configs:
+      - source_labels: [__meta_consul_service]
+        target_label: service
+      - source_labels: [__meta_consul_node]
+        target_label: node
+
+  # Auth Service
+  - job_name: 'authservice'
+    consul_sd_configs:
+      - server: 'consul:8500'
+        services: ['authservice']
+    relabel_configs:
+      - source_labels: [__meta_consul_service]
+        target_label: service
+      - source_labels: [__meta_consul_node]
+        target_label: node
+
+  # Order Service
+  - job_name: 'orderservice'
+    consul_sd_configs:
+      - server: 'consul:8500'
+        services: ['orderservice']
+    relabel_configs:
+      - source_labels: [__meta_consul_service]
+        target_label: service
+      - source_labels: [__meta_consul_node]
+        target_label: node
+
+  # Payment Service
+  - job_name: 'paymentservice'
+    consul_sd_configs:
+      - server: 'consul:8500'
+        services: ['paymentservice']
+    relabel_configs:
+      - source_labels: [__meta_consul_service]
+        target_label: service
+      - source_labels: [__meta_consul_node]
+        target_label: node
+
+  # Infrastructure Services
+  - job_name: 'consul'
+    static_configs:
+      - targets: ['consul:8500']
+
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis-exporter:9121']
+
+  - job_name: 'rabbitmq'
+    static_configs:
+      - targets: ['rabbitmq:15692']
+
+  # Databases
+  - job_name: 'postgres-auth'
+    static_configs:
+      - targets: ['postgres-exporter-auth:9187']
+
+  - job_name: 'postgres-order'
+    static_configs:
+      - targets: ['postgres-exporter-order:9187']
+
+  - job_name: 'postgres-payment'
+    static_configs:
+      - targets: ['postgres-exporter-payment:9187']

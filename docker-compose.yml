@@ -1,20 +1,49 @@
 version: '3.9'
 
 services:
-  authservice:
-    build:
-      context: ./AuthService
-      dockerfile: Dockerfile
+  # Infrastructure Services
+  consul:
+    image: consul:1.16
     ports:
-      - "5000:80"
-    depends_on:
-      - db
+      - "8500:8500"
+    command: >
+      consul agent -dev -ui -client=0.0.0.0 -bootstrap-expect=1
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=authdb;Username=postgres;Password=postgres
+      - CONSUL_BIND_INTERFACE=eth0
 
-  db:
-    image: postgres
+  jaeger:
+    image: jaegertracing/all-in-one:1.49
+    ports:
+      - "16686:16686"
+      - "14268:14268"
+      - "6831:6831/udp"
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "15692:15692"
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD}
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    command: ["bash", "-lc", "rabbitmq-plugins enable --offline rabbitmq_prometheus && exec rabbitmq-server"]
+
+  # Databases
+  auth-db:
+    image: postgres:15
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -23,7 +52,197 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - auth_data:/var/lib/postgresql/data
+
+  order-db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: orderdb
+    ports:
+      - "5433:5432"
+    volumes:
+      - order_data:/var/lib/postgresql/data
+
+  payment-db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: paymentdb
+    ports:
+      - "5434:5432"
+    volumes:
+      - payment_data:/var/lib/postgresql/data
+
+  # Microservices
+  authservice:
+    build:
+      context: ./AuthService
+      dockerfile: Dockerfile
+    ports:
+      - "5001:8080"
+    depends_on:
+      - auth-db
+      - redis
+      - rabbitmq
+      - consul
+      - jaeger
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=auth-db;Port=5432;Database=authdb;Username=postgres;Password=postgres
+      - ConnectionStrings__Redis=redis:6379
+      - RabbitMQ__Host=rabbitmq
+      - RabbitMQ__Username=guest
+      - RabbitMQ__Password=guest
+      - Consul__Host=consul
+      - Consul__Port=8500
+      - JAEGER_AGENT_HOST=jaeger
+      - JAEGER_AGENT_PORT=6831
+
+  orderservice:
+    build:
+      context: ./OrderService
+      dockerfile: Dockerfile
+    ports:
+      - "5002:8080"
+    depends_on:
+      - order-db
+      - redis
+      - rabbitmq
+      - consul
+      - jaeger
+      - authservice
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=order-db;Port=5432;Database=orderdb;Username=postgres;Password=postgres
+      - ConnectionStrings__Redis=redis:6379
+      - RabbitMQ__Host=rabbitmq
+      - RabbitMQ__Username=guest
+      - RabbitMQ__Password=guest
+      - Consul__Host=consul
+      - Consul__Port=8500
+      - JAEGER_AGENT_HOST=jaeger
+      - JAEGER_AGENT_PORT=6831
+
+  paymentservice:
+    build:
+      context: ./PaymentService
+      dockerfile: Dockerfile
+    ports:
+      - "5003:8080"
+    depends_on:
+      - payment-db
+      - redis
+      - rabbitmq
+      - consul
+      - jaeger
+      - authservice
+      - orderservice
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=payment-db;Port=5432;Database=paymentdb;Username=postgres;Password=postgres
+      - ConnectionStrings__Redis=redis:6379
+      - RabbitMQ__Host=rabbitmq
+      - RabbitMQ__Username=guest
+      - RabbitMQ__Password=guest
+      - Consul__Host=consul
+      - Consul__Port=8500
+      - JAEGER_AGENT_HOST=jaeger
+      - JAEGER_AGENT_PORT=6831
+
+  # API Gateway
+  apigateway:
+    build:
+      context: ./ApiGateway
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    depends_on:
+      - consul
+      - redis
+      - authservice
+      - orderservice
+      - paymentservice
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__Redis=redis:6379
+      - Consul__Host=consul
+      - Consul__Port=8500
+
+  # Monitoring
+  prometheus:
+    image: prom/prometheus:v2.47.0
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+
+  grafana:
+    image: grafana/grafana:10.1.0
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD}
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+    depends_on:
+      - prometheus
+
+  # Metrics Exporters
+  redis-exporter:
+    image: oliver006/redis_exporter:latest
+    environment:
+      - REDIS_ADDR=redis:6379
+    ports:
+      - "9121:9121"
+    depends_on:
+      - redis
+
+  postgres-exporter-auth:
+    image: prometheuscommunity/postgres-exporter:latest
+    environment:
+      - DATA_SOURCE_NAME=postgresql://postgres:${AUTH_DB_PASSWORD}@auth-db:5432/authdb?sslmode=disable
+    ports:
+      - "9187:9187"
+    depends_on:
+      - auth-db
+
+  postgres-exporter-order:
+    image: prometheuscommunity/postgres-exporter:latest
+    environment:
+      - DATA_SOURCE_NAME=postgresql://postgres:${ORDER_DB_PASSWORD}@order-db:5432/orderdb?sslmode=disable
+    ports:
+      - "9188:9187"
+    depends_on:
+      - order-db
+
+  postgres-exporter-payment:
+    image: prometheuscommunity/postgres-exporter:latest
+    environment:
+      - DATA_SOURCE_NAME=postgresql://postgres:${PAYMENT_DB_PASSWORD}@payment-db:5432/paymentdb?sslmode=disable
+    ports:
+      - "9189:9187"
+    depends_on:
+      - payment-db
 
 volumes:
-  pgdata:
+  auth_data:
+  order_data:
+  payment_data:
+  redis_data:
+  rabbitmq_data:
+  prometheus_data:
+  grafana_data:

@@ -1,5 +1,6 @@
-﻿using AuthService.DTOs.Admin;
+using AuthService.DTOs.Admin;
 using AuthService.Interfaces;
+using AuthService.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuthService.Services
@@ -22,7 +23,7 @@ namespace AuthService.Services
                     Email = u.Email,
                     Role = u.Role,
                     IsBanned = u.IsBanned,
-                    EmailConfirmed = u.EmailConfirmed
+                    EmailConfirmed = u.IsEmailConfirmed
 
                 })
                 .ToListAsync();
@@ -54,7 +55,7 @@ namespace AuthService.Services
             var user = await _context.Users.FindAsync(userId);
             if (user == null) return false;
 
-            user.EmailConfirmed = true;
+            user.IsEmailConfirmed = true;
             await _context.SaveChangesAsync();
             return true;
         }

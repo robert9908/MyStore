@@ -1,0 +1,161 @@
+syntax = "proto3";
+
+option csharp_namespace = "MyStore.Shared.Grpc.Payment";
+
+package payment;
+
+// Payment Service gRPC API
+service PaymentService {
+  // Create payment for order
+  rpc CreatePayment(CreatePaymentRequest) returns (CreatePaymentResponse);
+  
+  // Get payment by ID
+  rpc GetPaymentById(GetPaymentByIdRequest) returns (GetPaymentByIdResponse);
+  
+  // Get payments by order ID
+  rpc GetPaymentsByOrderId(GetPaymentsByOrderIdRequest) returns (GetPaymentsByOrderIdResponse);
+  
+  // Update payment status (webhook processing)
+  rpc UpdatePaymentStatus(UpdatePaymentStatusRequest) returns (UpdatePaymentStatusResponse);
+  
+  // Create refund
+  rpc CreateRefund(CreateRefundRequest) returns (CreateRefundResponse);
+  
+  // Validate payment ownership
+  rpc ValidatePaymentOwnership(ValidatePaymentOwnershipRequest) returns (ValidatePaymentOwnershipResponse);
+  
+  // Get payment status for order
+  rpc GetPaymentStatus(GetPaymentStatusRequest) returns (GetPaymentStatusResponse);
+}
+
+// Request/Response messages
+message CreatePaymentRequest {
+  string order_id = 1;
+  string user_id = 2;
+  double amount = 3;
+  string currency = 4;
+  string payment_method = 5;
+  string description = 6;
+}
+
+message CreatePaymentResponse {
+  bool success = 1;
+  Payment payment = 2;
+  string payment_url = 3;
+  string error_message = 4;
+}
+
+message GetPaymentByIdRequest {
+  string payment_id = 1;
+  string requesting_user_id = 2;
+}
+
+message GetPaymentByIdResponse {
+  bool found = 1;
+  Payment payment = 2;
+  string error_message = 3;
+}
+
+message GetPaymentsByOrderIdRequest {
+  string order_id = 1;
+  string requesting_user_id = 2;
+}
+
+message GetPaymentsByOrderIdResponse {
+  repeated Payment payments = 1;
+  int32 total_count = 2;
+}
+
+message UpdatePaymentStatusRequest {
+  string payment_id = 1;
+  PaymentStatus status = 2;
+  string gateway_transaction_id = 3;
+  string gateway_response = 4;
+}
+
+message UpdatePaymentStatusResponse {
+  bool success = 1;
+  string error_message = 2;
+}
+
+message CreateRefundRequest {
+  string payment_id = 1;
+  double amount = 2;
+  string reason = 3;
+  string requesting_user_id = 4;
+}
+
+message CreateRefundResponse {
+  bool success = 1;
+  Refund refund = 2;
+  string error_message = 3;
+}
+
+message ValidatePaymentOwnershipRequest {
+  string payment_id = 1;
+  string user_id = 2;
+}
+
+message ValidatePaymentOwnershipResponse {
+  bool is_owner = 1;
+  string error_message = 2;
+}
+
+message GetPaymentStatusRequest {
+  string order_id = 1;
+}
+
+message GetPaymentStatusResponse {
+  bool found = 1;
+  PaymentStatus status = 2;
+  double amount = 3;
+  string currency = 4;
+}
+
+// Payment entity
+message Payment {
+  string id = 1;
+  string order_id = 2;
+  string user_id = 3;
+  double amount = 4;
+  string currency = 5;
+  PaymentStatus status = 6;
+  string payment_method = 7;
+  string gateway_transaction_id = 8;
+  string gateway_response = 9;
+  string description = 10;
+  repeated Refund refunds = 11;
+  int64 created_at = 12;
+  int64 updated_at = 13;
+}
+
+message Refund {
+  string id = 1;
+  string payment_id = 2;
+  double amount = 3;
+  RefundStatus status = 4;
+  string reason = 5;
+  string gateway_refund_id = 6;
+  int64 created_at = 7;
+  int64 updated_at = 8;
+}
+
+enum PaymentStatus {
+  PAYMENT_STATUS_UNSPECIFIED = 0;
+  PAYMENT_STATUS_PENDING = 1;
+  PAYMENT_STATUS_PROCESSING = 2;
+  PAYMENT_STATUS_SUCCEEDED = 3;
+  PAYMENT_STATUS_FAILED = 4;
+  PAYMENT_STATUS_CANCELLED = 5;
+  PAYMENT_STATUS_REFUNDED = 6;
+  PAYMENT_STATUS_PARTIALLY_REFUNDED = 7;
+}
+
+enum RefundStatus {
+  REFUND_STATUS_UNSPECIFIED = 0;
+  REFUND_STATUS_PENDING = 1;
+  REFUND_STATUS_PROCESSING = 2;
+  REFUND_STATUS_SUCCEEDED = 3;
+  REFUND_STATUS_FAILED = 4;
+  REFUND_STATUS_CANCELLED = 5;
+}

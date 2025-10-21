@@ -1,0 +1,8 @@
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.csproj.AssemblyReference.cache
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.AssemblyInfoInputs.cache
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.AssemblyInfo.cs
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.csproj.CoreCompileInputs.cache
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Николай\Desktop\MyStore\OrderService\obj\Debug\net8.0\OrderService.sourcelink.json

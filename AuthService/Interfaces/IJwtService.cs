@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+using System.Security.Claims;
+using AuthService.Entities;
 
 namespace AuthService.Interfaces
 {

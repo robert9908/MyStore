@@ -1,0 +1,134 @@
+syntax = "proto3";
+
+option csharp_namespace = "MyStore.Shared.Grpc.Order";
+
+package order;
+
+// Order Service gRPC API
+service OrderService {
+  // Get order by ID (for payment processing)
+  rpc GetOrderById(GetOrderByIdRequest) returns (GetOrderByIdResponse);
+  
+  // Update order status (called by PaymentService)
+  rpc UpdateOrderStatus(UpdateOrderStatusRequest) returns (UpdateOrderStatusResponse);
+  
+  // Get orders by user ID
+  rpc GetOrdersByUserId(GetOrdersByUserIdRequest) returns (GetOrdersByUserIdResponse);
+  
+  // Validate order ownership
+  rpc ValidateOrderOwnership(ValidateOrderOwnershipRequest) returns (ValidateOrderOwnershipResponse);
+  
+  // Cancel order (for refund processing)
+  rpc CancelOrder(CancelOrderRequest) returns (CancelOrderResponse);
+  
+  // Get order total for payment validation
+  rpc GetOrderTotal(GetOrderTotalRequest) returns (GetOrderTotalResponse);
+}
+
+// Request/Response messages
+message GetOrderByIdRequest {
+  string order_id = 1;
+  string requesting_user_id = 2;
+}
+
+message GetOrderByIdResponse {
+  bool found = 1;
+  Order order = 2;
+  string error_message = 3;
+}
+
+message UpdateOrderStatusRequest {
+  string order_id = 1;
+  OrderStatus status = 2;
+  string payment_id = 3;
+  string notes = 4;
+}
+
+message UpdateOrderStatusResponse {
+  bool success = 1;
+  string error_message = 2;
+}
+
+message GetOrdersByUserIdRequest {
+  string user_id = 1;
+  int32 page = 2;
+  int32 page_size = 3;
+  OrderStatus status_filter = 4;
+}
+
+message GetOrdersByUserIdResponse {
+  repeated Order orders = 1;
+  int32 total_count = 2;
+  int32 page = 3;
+  int32 page_size = 4;
+}
+
+message ValidateOrderOwnershipRequest {
+  string order_id = 1;
+  string user_id = 2;
+}
+
+message ValidateOrderOwnershipResponse {
+  bool is_owner = 1;
+  string error_message = 2;
+}
+
+message CancelOrderRequest {
+  string order_id = 1;
+  string reason = 2;
+  string requesting_user_id = 3;
+}
+
+message CancelOrderResponse {
+  bool success = 1;
+  string error_message = 2;
+}
+
+message GetOrderTotalRequest {
+  string order_id = 1;
+}
+
+message GetOrderTotalResponse {
+  bool found = 1;
+  double total_amount = 2;
+  string currency = 3;
+}
+
+// Order entity
+message Order {
+  string id = 1;
+  string user_id = 2;
+  OrderStatus status = 3;
+  double total_amount = 4;
+  double shipping_cost = 5;
+  double tax_amount = 6;
+  string shipping_address = 7;
+  string payment_method = 8;
+  string notes = 9;
+  repeated OrderItem items = 10;
+  int64 created_at = 11;
+  int64 updated_at = 12;
+}
+
+message OrderItem {
+  string id = 1;
+  string product_id = 2;
+  string product_name = 3;
+  string product_description = 4;
+  string product_image_url = 5;
+  string product_sku = 6;
+  int32 quantity = 7;
+  double price = 8;
+  double discount_amount = 9;
+}
+
+enum OrderStatus {
+  ORDER_STATUS_UNSPECIFIED = 0;
+  ORDER_STATUS_PENDING = 1;
+  ORDER_STATUS_CONFIRMED = 2;
+  ORDER_STATUS_PROCESSING = 3;
+  ORDER_STATUS_SHIPPED = 4;
+  ORDER_STATUS_DELIVERED = 5;
+  ORDER_STATUS_CANCELLED = 6;
+  ORDER_STATUS_REFUNDED = 7;
+}
